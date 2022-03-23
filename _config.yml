@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: jay4497
+title: 'jay4497'
 subtitle: ''
 description: ''
 keywords:
@@ -86,7 +86,7 @@ updated_option: 'mtime'
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 10
+per_page: 0
 pagination_dir: p
 
 # Include / Exclude file(s)
