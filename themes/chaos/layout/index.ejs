@@ -1,6 +1,6 @@
 <div class="col-md-4 col-sm-11 chaos-post-container">
     <% if (page.posts.length > 0) { %>
-    <% page.posts.sort('order', -1).limit(pageNum).each(function(post) { %>
+    <% page.posts.each(function(post) { %>
     <article class="chaos-post">
         <div class="chaos-post-header">
             <h3>
