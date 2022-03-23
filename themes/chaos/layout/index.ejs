@@ -1,20 +1,3 @@
-<%
-var subLength = 150;
-if (theme.auto_excerpt) {
-    if (theme.auto_excerpt.enable == true && theme.auto_excerpt.length > 0) {
-        subLength = theme.auto_excerpt.length;
-    }
-}
-var pageNum = 10;
-if (config.index_generator.per_page) {
-    pageNum = config.index_generator.per_page;
-}
-var order = date;
-if (config.index_generator.order_by) {
-    order = config.index_generator.order_by;
-}
-%>
-
 <div class="col-md-4 col-sm-11 chaos-post-container">
     <% if (page.posts.length > 0) { %>
     <% page.posts.sort('order', -1).limit(pageNum).each(function(post) { %>
@@ -62,7 +45,7 @@ if (config.index_generator.order_by) {
             <% }%>
             <div class="article-item-content">
                 <% if (post.content) {
-                        var text = strip_html(post.content).substr(0, subLength) + '...';
+                        var text = strip_html(post.content).substr(0, 150) + '...';
                     }
                 %>
                 <p><%= text %></p>

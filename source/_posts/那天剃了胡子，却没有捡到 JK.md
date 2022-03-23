@@ -2,12 +2,12 @@
 title: 那天剃了胡子，却没有捡到 JK
 date: 2021-04-15 21:24:36
 id: 150
-cover: https://images.jay4497.cn/af2e04bba46dcf725dcf70d121a14/thumbs/161849290260783de6b116a4204.jpg
+cover: /uploads/161849290260783de6b116a4204.jpg
 categories:
 - madao
 ---
 
-![sakura](https://images.jay4497.cn/af2e04bba46dcf725dcf70d121a14/original/161849290260783de6b116a4204.jpg)
+![sakura](/uploads/161849290260783de6b116a4204.jpg)
 
 那天剃了胡子，晚上喝得微醺，悠哉地回家。
 
