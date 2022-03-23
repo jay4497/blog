@@ -61,7 +61,7 @@
 
     <div class="chaos-load-more">
         <% if (page.prev && page.prev > 1) { %>
-        <a class="chaos-page-pre" href="<%- url_for('page/' + page.prev) %>">
+        <a class="chaos-page-pre" href="<%- url_for('p/' + page.prev) %>">
             <i class="oi oi-chevron-left"></i> 上一页
         </a>
         <% }%>
@@ -71,7 +71,7 @@
         </a>
         <% }%>
         <% if (page.next) { %>
-        <a class="chaos-page-next" href="<%- url_for('page/' + page.next) %>">
+        <a class="chaos-page-next" href="<%- url_for('p/' + page.next) %>">
             下一页 <i class="oi oi-chevron-right"></i>
         </a>
         <% }%>
