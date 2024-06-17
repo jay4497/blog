@@ -35,12 +35,15 @@ pre,
 code,
 kbd,
 samp {
-    font-family: "Source Code Pro", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-family: "Source Code Pro", SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace, sans-serif;
 }
 blockquote,pre {
     border-left: solid 5px #ccc;
     margin-left: 2em;
     padding-left: 1em;
+}
+img {
+    display: block;
 }
 
 .chaos-red{
@@ -58,7 +61,7 @@ blockquote,pre {
 
 .chaos-selected-image{
     position: absolute;
-    top: 0px;
+    top: 0;
     width: 100%;
     height: 600px;
     overflow: hidden;
@@ -169,7 +172,6 @@ blockquote,pre {
     background-color: #fff;
     border-radius: 8px;
     margin: 0 auto;
-    margin-top: 0px;
 }
 .chaos-post{
     border-bottom: solid 1px #ececec;
@@ -185,7 +187,6 @@ blockquote,pre {
 }
 .chaos-post .chaos-post-header{
     text-align: center;
-    /*border-bottom: solid 1px #ececec;*/
 }
 .chaos-post .chaos-post-header > a{
     display: block;
@@ -197,7 +198,7 @@ blockquote,pre {
 }
 .chaos-post-header-info span{
     display: inline-block;
-    padding: 0px 8px;
+    padding: 0 8px;
 }
 .chaos-post .chaos-post-description p{
     text-indent: 2em;
@@ -214,6 +215,7 @@ blockquote,pre {
     transition: background-size .3s;
 }
 .chaos-post .chaos-post-cover:hover{
+    -webkit-background-size: 130% auto !important;
     background-size: 130% auto !important;
 }
 .chaos-post .chaos-post-cover .chaos-post-cover-water{
