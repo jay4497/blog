@@ -94,6 +94,7 @@ img {
     display: inline-block;
 }
 .chaos-logo img{
+    display: inline-block;
     width: 36px;
     border-radius: 18px;
     vertical-align: middle;
@@ -199,6 +200,10 @@ img {
 .chaos-post-header-info span{
     display: inline-block;
     padding: 0 8px;
+}
+.chaos-post-header-info span i {
+    top: 0;
+    vertical-align: middle;
 }
 .chaos-post .chaos-post-description p{
     text-indent: 2em;
