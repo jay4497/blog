@@ -9,7 +9,7 @@
                     var fin_date = date(page.date, 'MM-DD');
                     var post_year = date(page.date, 'YYYY');
                     var now_year = date(Date.now(), 'YYYY');
-                    if(post_year != now_year) {
+                    if (post_year != now_year) {
                         fin_date = date(page.date, 'YYYY-MM-DD');
                     }
                     %>
@@ -37,10 +37,10 @@
         </div>
     </article>
     <div class="chaos-post-toolbar">
-        <span class="chaos-blue" id="chaos-share" style="position: relative;">
+        <div class="chaos-blue" id="chaos-share" style="position: relative;display: inline">
             <i class="oi oi-share-boxed" style="z-index: 5;"></i>
             <div class="social-share" data-sites="qzone, qq, wechat, weibo, douban, twitter, google"></div>
-        </span>
+        </div>
     </div>
     <style>
         .chaos-post-toolbar{
