@@ -8,8 +8,7 @@
         第一场雪 - jay4497
     </title>
     <link rel="shortcut icon" href="/images/jay4497.ico">
-    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.bootcss.com/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcdn.net/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
     
 <link rel="stylesheet" href="/css/chaos.css">
 
@@ -18,13 +17,13 @@
     <meta name="twitter:title" content="第一场雪 - jay4497">
     <meta name="twitter:description" content="jay4497's blog">
     
-    <meta name="twitter:image" content="http://jay4497.cn/images/34512986_p0.jpg">
+    <meta name="twitter:image" content="http://jay4497.cn/images/selected.jpg">
     
 <meta name="generator" content="Hexo 5.4.1"></head>
 
 <body>
 <div id="app">
-    <div class="container-fluid">
+    <div class="chaos-width-full">
         <div class="chaos-menu-dropdown" id="slide-menu">
             <a class="chaos-logo" href="/" id="chaos-dropdown-logo">
                 <img src="/images/logo.jpg">
@@ -47,8 +46,8 @@
             </span>
         </div>
         <header height="50px">
-            <div class="row">
-                <div class="col-md-4 col-sm-11 center-block">
+            <div class="chaos-flex-layout">
+                <div class="chaos-flex-layout-item">
                     <div class="chaos-menubar">
                         <a class="chaos-logo" href="/" id="chaos-logo">
                             <img src="/images/logo.jpg">
@@ -69,18 +68,18 @@
             </div>
         </header>
         <main class="chaos-container">
-            <div class="row">
-                <div class="col-md-4 col-sm-11 chaos-post-container-detail">
+            <div class="chaos-flex-layout">
+                <div class="chaos-flex-layout-item chaos-post-container-nomargin">
     <article class="chaos-post">
         <div class="chaos-post-header">
             <h1>第一场雪</h1>
             <div class="chaos-post-header-info">
-                <span class="chaos-green">
+                <span>
                     <i class="oi oi-clock"></i>
                     
                     2018-12-29
                 </span>
-                <span class="chaos-green">
+                <span>
                     <i class="oi oi-tag"></i>
                     <a class="category-link" href="/categories/nise/">伪的事</a>
                 </span>
@@ -132,7 +131,7 @@
             cursor: pointer;
         }
         .social-share{
-            width: 280px;
+            width: 300px;
             position: absolute;
             left: -100px;
             top: -10px;
@@ -145,16 +144,18 @@
             left: 18px;
             opacity: 1;
         }
+        .chaos-selected-image {
+            display: none;
+        }
     </style>
 </div>
-
             </div>
         </main>
     </div>
     <footer>
-        <p>&copy 2018 - 2025 jay4497</p>
+        <p>&copy; 2018 - 2025 jay4497</p>
         <p>
-            <img src="/images/moe_icp.png" style="display:inline-block;">
+            <img src="/images/moe_icp.png" style="margin-right:3px;">
             <a href="https://icp.gov.moe" class="moe-icp" target="_blank">萌备</a>
             <a class="moe-icp" href="https://icp.gov.moe/?keyword=20204497" target="_blank">20204497号</a>
         </p>
@@ -165,25 +166,20 @@
         </p>
     </footer>
     <div class="chaos-selected-image">
-        <img src="/images/34512986_p0.jpg">
+        <img src="/images/selected.jpg">
     </div>
 </div>
 
 <style>
-    .el-button:hover, .el-button:focus, .el-button:active{
-        border-color: #DCDFE6;
-        color: #999;
-        background-color: #fff;
-    }
     a.moe-icp,
     a.moe-icp:hover,
     a.moe-icp:focus {
-        color: #f08080;
+        color: var(--primary-color);
     }
 </style>
 
 <link href="/css/share.min.css" rel="stylesheet">
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script src="/js/jquery.share.min.js"></script>
 <script>
     function showProfile(){
@@ -226,17 +222,10 @@
 </script>
 
 <style>
-    .col-md-4, .col-sm-11{
-        padding-left:0;
-        padding-right:0;
-    }
-    .center-block{
-        margin: 0 auto;
-    }
     header{
         padding-left: 0;
         padding-right: 0;
-        background-color:rgba(255,255,255,0.6);
+        background-color: var(--bg-color-alpha);
         position: fixed;
         top: 0;
         left:0;
@@ -250,16 +239,19 @@
     }
     footer{
         padding-top: 8px;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
         height: auto !important;
         text-align: center;
-        color: #fff;
+        color: var(--text-color-footer);
         font-size: 0.9em;
-        background-color: #60676d;
+        background-color: var(--bg-color-footer);
     }
     footer p{
-        line-height: 2em;
+        height: 28px;
         margin-bottom: 0 !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     footer img{
         height: 25px;
