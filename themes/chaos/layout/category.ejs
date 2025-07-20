@@ -1,4 +1,4 @@
-<div class="col-md-4 col-sm-11 chaos-post-container" style="padding-top: 25px;padding-bottom: 25px; margin-top: 0;">
+<div class="chaos-flex-layout-item chaos-post-container" style="padding-top: 25px;padding-bottom: 25px; margin-top: 0;">
     <% if (page.posts.length > 0) { %>
     <% var step_year = date(Date.now(), 'YYYY'); %>
     <% page.posts.sort('order', -1).each(function(post) { %>
@@ -7,11 +7,11 @@
         var post_year = date(post.date, 'YYYY');
         if(post_year != step_year) {
             step_year = post_year;
-     %>
+    %>
         <div class="chaos-archive-line">
             <h1 class="chaos-post-archive-title-year"><%= step_year %></h1>
         </div>
-     <%
+    <%
         }
     %>
         <a class="chaos-post-archive-title chaos-archive-line" title="<%= post.title %>" href="<%- url_for(post.path) %>">

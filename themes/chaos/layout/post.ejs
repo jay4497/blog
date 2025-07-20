@@ -1,9 +1,9 @@
-<div class="col-md-4 col-sm-11 chaos-post-container-detail">
+<div class="chaos-flex-layout-item chaos-post-container-nomargin">
     <article class="chaos-post">
         <div class="chaos-post-header">
             <h1><%= page.title %></h1>
             <div class="chaos-post-header-info">
-                <span class="chaos-green">
+                <span>
                     <i class="oi oi-clock"></i>
                     <%
                     var fin_date = date(page.date, 'MM-DD');
@@ -15,7 +15,7 @@
                     %>
                     <%= fin_date %>
                 </span>
-                <span class="chaos-green">
+                <span>
                     <i class="oi oi-tag"></i>
                     <%- list_categories(page.categories, {
                         style: false,
@@ -53,7 +53,7 @@
             cursor: pointer;
         }
         .social-share{
-            width: 280px;
+            width: 300px;
             position: absolute;
             left: -100px;
             top: -10px;
@@ -65,6 +65,9 @@
             visibility: visible;
             left: 18px;
             opacity: 1;
+        }
+        .chaos-selected-image {
+            display: none;
         }
     </style>
 </div>

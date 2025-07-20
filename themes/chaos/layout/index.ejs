@@ -1,4 +1,4 @@
-<div class="col-md-4 col-sm-11 chaos-post-container">
+<div class="chaos-flex-layout-item chaos-post-container">
     <% if (page.posts.length > 0) { %>
     <% page.posts.each(function(post) { %>
     <article class="chaos-post">
@@ -9,7 +9,7 @@
                 </a>
             </h3>
             <div class="chaos-post-header-info">
-                <span class="chaos-green">
+                <span>
                     <i class="oi oi-clock"></i>
                     <%
                         var fin_date = date(post.date, 'MM-DD');
@@ -21,7 +21,7 @@
                     %>
                     <%= fin_date %>
                 </span>
-                <span class="chaos-green">
+                <span>
                     <i class="oi oi-tag"></i>
                     <%- list_categories(post.categories, {
                         style: false,
@@ -59,6 +59,7 @@
     </article>
     <% }); %>
 
+    <% if (page.total > 1) { %>
     <div class="chaos-load-more">
         <% if (page.prev && page.prev > 1) { %>
         <a class="chaos-page-pre" href="<%- url_for('p/' + page.prev) %>">
@@ -76,5 +77,6 @@
         </a>
         <% }%>
     </div>
+    <% }%>
     <% }%>
 </div>
