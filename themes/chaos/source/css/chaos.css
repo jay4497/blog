@@ -103,6 +103,15 @@ a {
     text-decoration: none;
     color: var(--primary-color);
 }
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+a.moe-icp,
+a.moe-icp:hover,
+a.moe-icp:focus {
+    color: var(--primary-color);
+}
 
 pre,
 code,
@@ -120,6 +129,43 @@ pre {
 
 img {
     display: block;
+}
+
+header{
+    padding-left: 0;
+    padding-right: 0;
+    background-color: var(--bg-color-alpha);
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    z-index: 3;
+}
+
+main{
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 25px;
+}
+
+footer{
+    padding-top: 8px;
+    padding-bottom: 10px;
+    height: auto !important;
+    text-align: center;
+    color: var(--text-color-footer);
+    font-size: 0.9em;
+    background-color: var(--bg-color-footer);
+}
+footer p{
+    height: 28px;
+    margin-bottom: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer img{
+    height: 25px;
 }
 
 .chaos-red {
@@ -373,7 +419,7 @@ img {
     display: block;
     width: 40px;
     height: 40px;
-    border-radius: 20px;
+    border-radius: 21px;
     background-color: var(--bg-color-secondary);
     font-size: 16px;
     border: solid 1px var(--border-color);
